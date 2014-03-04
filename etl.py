@@ -11,4 +11,4 @@ for excel_filename in xlsx_files_in_current_dir:
   sheet_names = workbook.sheet_names()
   for sheet_name in sheet_names:
     print "Writing " + sheet_name + ".csv..."
-    os.system("in2csv " + filename_without_extension + " --sheet " + "\"" + sheet_name + "\"" + " > " + "csv_files/" + sheet_name + ".csv")
+    os.system("in2csv " + excel_filename + " --sheet " + "\"" + sheet_name + "\"" + " > " + "csv_files/" + sheet_name + ".csv")
