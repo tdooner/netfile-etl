@@ -1,5 +1,7 @@
 #!/usr/bin/env bash -e
 
+PATH=/app/tmp/cache/.tools/:$PATH
+
 if [ ! -d csv_files ]; then
   mkdir csv_files
 fi
